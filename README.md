@@ -1,4 +1,6 @@
 # Full Stack Web Project with Microservices
+
+[![CI](https://github.com/mihuyen/CineVisionMicroserviceProject/actions/workflows/ci.yml/badge.svg)](https://github.com/mihuyen/CineVisionMicroserviceProject/actions/workflows/ci.yml)
 This project is a full-stack web application project
 and it was created with Java and React. 
 Spring Cloud was used in this project to create
@@ -97,6 +99,18 @@ in the docker-compose.yml file.
 On the Frontend side, JavaScript and React was used. Also,
 Axios was preferred to send request to the backend. For state management,
 Redux was used. For, design of the UI, Bootstrap and Css are used.
+
+## Quick start (Mock backend + Frontend)
+For a fast local demo without standing up all microservices:
+
+1) Start Mock Backend (port 8080)
+    - In VS Code: Run task "Run Mock Backend"
+    - Or PowerShell: `py -3 -X utf8 .\\mock-backend-fixed.py`
+2) Start Frontend (port 3000)
+    - `cd frontend`
+    - `npm ci --no-audit --legacy-peer-deps`
+    - `npm start`
+3) Open http://localhost:3000 and you should see movies. The frontend auto-targets http://<your-hostname>:8080 for API calls.
 
 ## Architectural Design
 <p align="center">
