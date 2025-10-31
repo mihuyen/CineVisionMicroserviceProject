@@ -6,7 +6,7 @@ metadata:
 spec:
   description: CineVision project scope
   sourceRepos:
-    - 'https://github.com/linhne14/CineVisionMicroserviceProject.git'
+    - 'https://github.com/mihuyen/CineVisionMicroserviceProject'
   destinations:
     - namespace: cinevision
       server: 'https://kubernetes.default.svc'

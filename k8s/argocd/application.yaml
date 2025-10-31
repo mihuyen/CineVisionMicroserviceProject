@@ -6,7 +6,7 @@ metadata:
 spec:
   project: cinevision
   source:
-    repoURL: 'https://github.com/linhne14/CineVisionMicroserviceProject.git'
+    repoURL: 'https://github.com/mihuyen/CineVisionMicroserviceProject'
     targetRevision: main
     path: k8s
     kustomize: {}
