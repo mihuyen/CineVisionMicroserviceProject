@@ -1,0 +1,21 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: cinevision
+  namespace: argocd
+spec:
+  project: cinevision
+  source:
+    repoURL: 'https://github.com/linhne14/CineVisionMicroserviceProject.git'
+    targetRevision: main
+    path: k8s
+    kustomize: {}
+  destination:
+    server: 'https://kubernetes.default.svc'
+    namespace: cinevision
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true

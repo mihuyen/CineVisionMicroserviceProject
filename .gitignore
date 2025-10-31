@@ -1,0 +1,40 @@
+# General
+.DS_Store
+Thumbs.db
+.env
+.env.*
+.vscode/
+.idea/
+*.log
+logs/
+
+# Node / Frontend
+node_modules/
+**/node_modules/
+# Keep built static site output for frontend if intentionally committed
+**/build/
+!frontend/build/
+
+# Java / Maven
+**/target/
+!.mvn/wrapper/maven-wrapper.jar
+
+# Python
+__pycache__/
+*.pyc
+
+# Coverage / Reports
+coverage/
+*.coverage
+*.lcov
+
+# Docker
+.dockerignore
+
+# OS/Editor swap files
+*.swp
+*.swo
+*.tmp
+
+# Local git backup folders (do NOT commit)
+.git.bak*/
